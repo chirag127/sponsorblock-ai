@@ -512,7 +512,7 @@ def info_from_video_id(video_id, segment_type="auto", cache=False):
             id=video_id
         )
         response = request.execute()
-        video_info = response["items"][0]
+        video_info = response["items"][0]["snippet"]
         if cache:
             file_name = f"video_info/{video_id}.json"
             with open(file_name, "w") as file:

@@ -415,7 +415,7 @@ hm at {url}{color.END}"""
         return None
 
     title = video_info["title"]
-    upload_date = video_info["uploadDate"]
+    upload_date = video_info["publishedAt"]
     split_date = upload_date.split("-")
     year = split_date[0]
     month = split_date[1]
