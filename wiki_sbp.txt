@@ -1,0 +1,69 @@
+Given a text, the model will return a category for the text.
+
+The categories are:
+
+Sponsor
+Interaction Reminder
+Unpaid/Self Promotion
+
+Sponsor(sponsor) is a part of a video promoting a product or service not directly related to the creator. The creator will receive payment or compensation in the form of money or free products.
+
+Interaction Reminder(interaction) are Explicit reminders to like, subscribe or interact with them on any paid or free platform or social media.
+
+Unpaid/Self Promotion (selfpromo)
+
+Self Promotion is promoting a product or service that is directly related to the creator themselves. This usually includes merchandise or promotion of monetized platforms.
+
+Unpaid Promotion is when creator will not receive any payment in exchange for this promotion. This includes charity drives or free shout outs for products or other people they like.
+
+Text: Please download the app.
+
+Category: selfpromo
+
+extracted text: Please download the app.
+--
+Text: Please like and subscribe. how are you doing?
+
+Category: interaction
+
+extracted text: Please like and subscribe.
+--
+Text: Please check out my new merch.
+
+Category: selfpromo
+--
+Text: oh i actually remember this story i haven't seen his video on it but i remember this was on reddit there was a random tick tock that was taken well at least this story i guess the whole thing might not be connected a random tick tock taken of a girl with like a black eye and PROFANITY_TOKEN and then redditors actually were the ones that maybe potentially connected her to a missing person's case i don't remember the result i don't know if it actually turned out to be true or not but yeah i guess we'll check it out sure we're doing it from most tame to most gruesome this video gets really really really dark and it sounds so ironic because it's tick-tock but you guys wouldn't have dick talk's a PROFANITY_TOKEN platform there also i mean there's nothing list i hope you guys watch the whole thing by the way make sure to follow me on instagram and subscribe to the channel if you are not already actually don't subscribe yet i'll earn your subscription by the end of this video without fudding accounts like most social media underwhelming users that want followers can easily look everyone knows tick tock spot PROFANITY_TOKEN google i don't know how lame you have to be to do that stuff hey fun fact that's how travis scott started travis scott bought all of his followers on soundcloud when he started his manager came out and said that he travis scott paid him to set up a bot farm for his soundcloud engagements and then he was able to pitch that manufactured success to a record label so yeah that PROFANITY_TOKEN really works fetishization of murderers for anyone with any interest that's big on tumblr some people are push the boundary a little when they begin romanticizing these murderers take cameron herron for example this year this NUMBER_TOKEN year old man was sentenced to a total of NUMBER_TOKEN years out about killing a NUMBER_TOKEN year old mom and her baby during an illegal street race yet people on tick tock were begging for his freedom because he is quote unquote cute with dedicated fan edits comments like chances should be given and he deserves
+
+Category: interaction
+
+extracted text: by the way make sure to follow me on instagram and subscribe to the channel if you are not already actually don't subscribe yet i'll earn your subscription by the end of this video
+--
+Text: I'm going to be doing a giveaway for a free iPhone 12 Pro Max
+
+Category: selfpromo
+
+extracted text: I'm going to be doing a giveaway for a free iPhone 12 Pro Max
+--
+Text: oh what how how are you gonna oh oh my gosh oh my gosh how are you gonna get back oh my oh my gosh the bird is
+
+Category: None
+--
+Text: how are you
+
+Category: None
+--
+Text: India is a great country, please subcribe to me, I also want to thank out sponsors.
+
+Category: sponsor
+
+extracted text: I also want to thank out sponsors.
+
+Category: Interaction
+
+extracted text: please subcribe to me
+--
+Text: evaluate a deck of cards you may not know what to do with what the heck you just got when you're starting with the p box and that can that can definitely be a confusing and difficult part but ultimately i think the the NUMBER_TOKEN random cards start is just fantastic fantastic how do i feel about philosopher's stone philosopher's stone is it's pretty easy energy what final stone does is give you energy and then makes enemies do a little bit more damage the more times that enemy attacks the more damage they do which makes it scary against heart but for the most part filo stone's penalty takes the form of you take between one and one to three damage per turn essentially kind of a nice even low impact penalty that i think solidly puts the phyllo stone in the beat here there's almost no way to avoid this penalty you can use cards like disarm or malays to get rid of the extra strength but you'll never be completely free of it so a lot of times you are better off with a different relic but a lot of times you're also worse off with a different relic hey hey everyone did you know that you can now support me directly on youtube by getting a channel membership for as low as five bucks a month you'll get all access to perks like custom badges and emojis to use in comments and discounts on the merch store all while helping support me and this channel do what i love every day just click the join button below to get started now back to the video trying to trying to kind of kind of both talk about these in the context of swaps and uh and generally speaking some of the relics are fairly different for one versus the others and not all of these you can get from swapping for example the last of the starter relic upgrades the ring of the serpent gives you one extra card every single turn but takes away that starting relic of the ring of the snake so takes away your two bonus cards on turn one and it's that particular feature that really gives me a hard time with the ring of the serpent i think as a as an overall effect one card drop per turn is an exceptionally good boss relic kind of effect monster train gives you the option to take plus one draw as your as your
+
+Category: selfpromo
+
+extracted text: hey hey evewryone did you know that you can now support me directly on youtube by getting a channel membership for as low as five bucks a month you'll get all access to perks like custom badges and emojis to use in comments and discounts on the merch store all while helping support me and this channel do what i love every day just click the join button below to get started now back to the video
