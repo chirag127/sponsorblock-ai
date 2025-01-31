@@ -1,0 +1,1035 @@
+5 Vs of Big Data
+A First Java Server Page Example in Servlets
+A Parametric Productivity Model in spm
+ARP
+AWT controls
+Acceptance Testing in Software Testing
+Activities in Software Project Management
+Activities in spm
+Administration in Ancient India
+Agile Methods in Software Project Management
+Agriculture in India and Ancient India
+Alpha and Beta Testing of Products  software testing strategy
+An Overview of CASE Tools in software project management
+Analysis in Requirement Engineering Process in SRS
+Apache Hadoop
+Apache Hive architecture
+Applications on Big Data using HBase
+Applications on Big Data using Hive
+Applications on Big Data using Pig
+Architectural Design in Software Design
+Arrays in Core Java
+Astronomy in India and Ancient India
+Avro and file based data structures in Hadoop io
+Basic Concept of Software Design
+Basic internetworking in network layer
+Basics of Software Estimation in spm
+Best Methods of Staff Selection in spm
+Bhakti Movement in India
+Big Data
+Big Data Analytics
+Big Data Architecture
+Big Data applications
+Big Data ethics
+Big Data features – security, compliance, auditing and protection
+Big Data importance
+Big Data privacy
+Big Data technology components
+Big data characteristics
+Biology in India and Ancient India
+Brahmi Script
+Buddhism in India
+Buddhist Literature in Pali,Prakrit And Sanskrit
+CIDR
+COCOMO II in spm
+COSMIC Full Function Points in spm
+CSS in Web Page Designing
+Categories of Maintenance of Software
+Categories of networks in computer networks
+Categorization of Software Projects in spm
+Challenges faced by Women in Society in Ancient India
+Challenges of conventional systems compared to Big Data
+Change Control Process in software project management
+Change Control in spm
+Channel allocation in medium access control
+Chemistry in India and Ancient India
+Choice of Process Models in Software Project Management
+Code Inspection (Code Inspection) Static testing strategy
+Cohesion Measures in Software Design
+Collection of Data in spm
+Communication Plans in spm
+Communications Genres in spm
+Comparison of Pig with Databases
+Compliance with Design and Coding Standards (Coding Standards) Static testing strategy
+Computer Networks
+Conditions’ of the Welfare of Societies in Ancient India
+Congestion control algorithms in cn
+Connecting to Internet
+Connection management in transport layer
+Constructive Cost Models (COCOMO) in software project management
+Contract Management in spm
+Contract Theory of origin of State
+Control Flow Graphs in software design
+Cookies in Servlets
+Core Java
+Corrective Maintenance (CM) of Software
+Cost Monitoring in spm
+Cost Schedules in spm
+Cost of Maintenance of Software
+Council of Ministers in Ancient India
+Coupling in Software Design
+Creating a JavaBeans
+Creation of Critical Paths in spm
+Critical Path (CRM) Method in spm
+Cryptography in application layer
+Current developments in Arts and Cultural in India
+Custom Tag Libraries in Servlets
+Cyclomatic Complexity Measures in software design
+DHCP
+DOM and SAX in Web Page Designing
+DTD in Web Page Designing
+Dance as Cultural Heritage of India
+Data Flow Diagrams in Software Requirement Specification (SRS)
+Data Processing operators in Pig
+Data compression in application layer
+Data type in Core Java
+Databases with JDBC in JDBC
+Datagram in Networking
+Decision Making in spm
+Decision Tables in Software Requirement Specification (SRS)
+Design Strategies in Software Design
+Design Structure Charts in Software Design
+Design of HDFS
+Directives in Servlets
+Dispersed and Virtual Teams in spm
+Document type definition in Web Page Designing
+Documentation in Requirement Engineering Process in SRS
+Domain Name System
+Dynamic HTML in Web Page Designing
+Dynamic System Development Method in spm
+Earned Value Analysis in spm
+Effort and Cost Estimation Techniques in spm
+Efforts to Improve Software Quality in software project management
+Electronic mail in application layer
+Elementary Data Link Protocols in link layer in Computer Networks
+Elicitation in Requirement Engineering Process in SRS
+Engineering and Architecture as Cultural Heritage of India
+Entity Relationship Diagrams in Software Requirement Specification (SRS)
+Entity bean in Enterprise Java Bean
+Error Detection and Correction in link layer in Computer Networks
+Estimation of Various Parameters such as Cost and Time in software project management
+Ethical and Professional Concerns in spm
+Event handling in Core Java
+Evolution of languages in India
+Evolution of script in India
+Evolutionary Development Models in SDLC
+Evolutionary Theory of origin of State
+Exception Handling in Core Java
+Execution Modes of Pig
+Extreme Programming in spm
+Factory Methods in Networking
+Fairs and Festivals as Cultural Heritage of India
+Famous Sanskrit Authors in India
+Feasibility Study in Software Requirement Specification (SRS)
+File Transfer Protocol in application layer
+Flow Charts in Software Design
+Flow control in link layer in Computer Networks
+Flow control in transport layer
+Force Theory of origin of State
+Formal Technical Reviews (Peer Reviews) Static testing strategy
+Formulating Network Model in spm
+Forward Pass & Backward Pass Techniques in spm
+Four-class Classification of Society in Ancient India
+Frames in Web Page Designing
+Framework for Management and Control in spm
+Framing in link layer in Computer Networks
+Function Oriented Design in Software Design
+Function Point (FP) Based Measures in software design
+Functional Testing (Black Box Testing) software testing strategy
+Geography in India and Ancient India
+Goals and applications of networks and protocols
+Grunt in Pig
+HBase
+HBase clients
+HBase concepts
+HBase example
+HBase vs RDBMS
+HDFS
+HDFS concepts
+HDFS federation in Hadoop ecosystem
+HDFS monitoring & maintenance in Hadoop Environment
+HTML in Web Page Designing
+Hadoop
+Hadoop 2.0 New Features NameNode high availability
+Hadoop Distributed File System
+Hadoop Echo System
+Hadoop Eco System Frameworks
+Hadoop Eco System Frameworks , Pig , Hive and HBase
+Hadoop Eco System and YARN
+Hadoop Environment
+Hadoop I/O
+Hadoop archives in HDFS
+Hadoop benchmarks in Hadoop Environment
+Hadoop configuration in Hadoop Environment
+Hadoop ecosystem components
+Hadoop file system interfaces
+Hadoop in the cloud in Hadoop Environment
+Hadoop pipes
+Hadoop streaming
+Halestead’s Software Science in software design
+Handling HTTP get Requests in Servlets
+Handling HTTP post Requests in Servlets
+Harappan Script
+Harappan Technologies in India and Ancient India
+Health and Safety in spm
+Heterodox Sects in India
+Hindi Literature
+History of Hadoop
+History of Internet
+History of Web
+Hive
+Hive metastore
+Hive services
+Hive shell
+HiveQL
+Hyper Text Transfer Protocol
+I/O in Core Java
+IBM Big Data strategy
+ICMP
+IEEE Standards for SRS
+INDIAN TRADITIONS, CULTURAL AND SOCIETY
+IP
+IPv6 in cn
+ISO 9000 Models in SRS
+ISP
+Images in Web Page Designing
+Implicit Objects in Servlets
+Importance of Software Project Management
+Indian Architecture in Ancient India and present times
+Indian Cinema as a Performing Art in India
+Indian’s Cultural Contribution to the World
+India’s Dominance up to Pre-colonial Times and Ancient India
+InetAddress in Networking
+Information Modelling in Software Requirement Specification (SRS)
+Inheritance in Core Java
+Installing Hive
+Installing spark
+Instance Methods in Networking
+Integration Testing in Software Testing
+Interface Servlet and the Servlet Life Cycle in Servlets
+Internet Addressing in Networking
+Introduction to AWT in Core Java
+Introduction to Internet services
+Introduction to Internet tools
+Introduction to JSP in Servlets
+Introduction to Java
+Introduction to Java script
+Introduction to MongoDB
+Introduction to NoSQL databases
+Introduction to Scala
+Introduction to Software Engineering
+Introduction to Web Technology
+Introduction to client-server computing
+Introductory Concepts of Computer Networks
+Iterative Enhancement Models in SDLC
+Jain Literature in Pali,Prakrit And Sanskrit
+Jainism in India
+Java Applet in Core Java
+Java Database Connectivity (JDBC)
+Java Server Pages (JSP) in Servlets
+Java Server Pages Overview in Servlets
+Java interfaces to HDFS
+Java script in Scripting
+JavaBeans Properties
+Joining in JDBC
+Kannada Literature
+Kautilya’s Arthashastra
+Kingship in states in Ancient India
+LAN standards in local area network
+Layout managers in AWT
+Leadership in spm
+Link layer in Computer Networks
+Link layer switches & bridges in local area network
+List in Web Page Designing
+Logical addressing in network layer
+Low Level Design in Software Design
+MRv2 in Hadoop ecosystem
+Malayalam Literature
+Management Control in spm
+Management Principles in spm
+Managing Contracts in spm
+Managing Interactive Processes in spm
+Managing People in spm
+Manipulating in JDBC
+Map Reduce
+Map Reduce features
+Map Reduce framework and basics
+Map Reduce scripts in Hive
+Map Reduce types in map reduce
+Marriage in Society in Ancient India
+Martial Arts Traditions of India
+Mathematics in India and Ancient India
+Medicine in India and Ancient India
+Medium Access Control and Local Area Networks
+Merging Data from Multiple Tables in JDBC
+Metallurgy in India and Ancient India
+Methodologies in Software Project Management
+Methods & Classes in Core Java
+Modern religious practices in India
+Modularization in Software Design
+Module 1Society State and Polity in India
+Module 2Indian Literature, Culture, Tradition, and Practices
+Module 3Indian Religion, Philosophy, and Practices
+Module 4-Science, Management and Indian Knowledge System
+Module 5Cultural Heritage and Performing Arts
+MongoDB
+Monte Carlo Simulation in spm
+Motivation in spm
+Multiple access protocols in medium access control
+Multiplexing in transport layer
+Multithread programming in Core Java
+Music as Cultural Heritage of India
+Mystical Theory of origin of State
+Need for Maintenance and Maintenance Planning
+Network Planning Models in spm
+Network architecture with reference to Computer Networks
+Network devices in Computer Networks
+Network management in application layer
+Network performance and transmission impairments in Computer Networks
+Network structure with reference to Computer Networks
+Network topology design in Computer Networks
+Networking in Scripting
+NoSQL Databases
+North Indian Literature
+Northern Indian languages
+Object Models in Web Page Designing
+Object Oriented Design in Software Design
+Objectives of Activity Planning in spm in spm
+Operator in Core Java
+Organization of the Internet
+Organizational Behavior in spm
+Organizational Structures in spm
+PERT Technique in spm
+Package and Interface in Core Java
+Painting as Cultural Heritage of India
+Perfective Maintenance (PM) of Software
+Persian Literature in India
+Physical Layer in Computer Networks
+Physics in India and Ancient India
+Pig
+Pig Introduction to PIG
+Pig Latin
+Point-to-point networks in network layer
+Political Ideals in Ancient India and their relevance in modern times
+Pottery as Cultural Heritage of India
+Pre-Vedic Religion in India
+Prepared Statements in JDBC
+Preparing a Class to be a JavaBeans
+Preventive Maintenance (PM) of Software
+Prioritizing Monitoring in spm
+Process-to-process delivery in transport layer
+Project Schedules  in spm
+Project Tracking in spm
+Protocols Governing Web
+Prototype Model in SDLC
+Pseudo Codes in Software Design
+Puppetry as Cultural Heritage of India
+Puranas
+Purusārtha in Society in Ancient India
+Pyrotechnics in India and Ancient India
+Quality of service in transport layer
+RARP
+Rapid Application Development in Software Project Management
+Real-world Map Reduce
+Redirecting Requests to Other Resources in Servlets
+Regression Testing in Software Testing
+Remote login in application layer
+Requirement Engineering Process in SRS
+Resilient Distributed Databases in spark
+Resource Allocation Models (RAIM) in software project management
+Resource Allocation in spm
+Reverse Engineering (RE) of Software
+Review and Management of User Needs in Requirement Engineering Process in SRS
+Risk Assessment in spm
+Risk Evaluation in spm
+Risk Identification in spm
+Risk Management in spm
+Risk Planning in spm
+Routing algorithms and protocols in cn
+Routing in network layer
+Running MRv1 in YARN
+SCALA
+SEI-CMM Model in SRS
+SQA Plans in SRS
+SRS Document
+Sangama Literature in India
+Schedule/Duration of Maintenance in software project management
+Scripting in Servlets
+Sculptures as Cultural Heritage of India
+Seals as Cultural Heritage of India
+Sequencing and Scheduling in spm
+Servlet Overview and Architecture in Servlets
+Session Tracking in Servlets
+Session Tracking with Http Session in Servlets
+Setting Objectives in spm
+Setting up a Hadoop cluster in Hadoop Environment
+Shankaracharya and Advaita Vedanta
+Signal transmission and encoding in Computer Networks
+Similarity and Differences from Conventional Engineering Processes
+Six System Indian Philosophy
+Slavery in Society in Ancient India
+Sliding Window protocols in link layer in Computer Networks
+Society in Ancient India
+Socio religious reform movement of 19th century in India
+Software Characteristics
+Software Components
+Software Configuration Management Activities
+Software Configuration Management in spm
+Software Crisis
+Software Development Life Cycle (SDLC) Models
+Software Engineering
+Software Engineering Processes
+Software Measurement and Metrics in Software Design
+Software Process and Process Models
+Software Project Management
+Software Quality Assurance (SQA) in SRS
+Software Quality Attributes
+Software Quality Frameworks (SQF) in SRS
+Software ReEngineering (SR) of Software
+Software Risk Analysis and Management in software project management
+Software Version Control in software project management
+Software as an Evolutionary Entity
+Spark
+Spark on YARN
+Spiral Model in SDLC
+Stages of State Formation in Ancient India
+Standard Actions in Servlets
+State in Ancient India
+Stateful Session bean in Enterprise Java Bean
+Stateless Session bean in Enterprise Java Bean
+Static Testing Strategies in Software Testing
+Static and dynamic routing in cn
+Stepwise Project Planning in spm
+Stored Procedures in JDBC
+Strategic Program Management in Software Project Management
+Stress in spm
+String handling in Core Java
+Structural Testing (White Box Testing) software testing strategy
+Sufi movement in India
+Switching techniques and multiplexing in Computer Networks
+TCP Congestion control in transport layer
+TCP Transport layer protocol
+TCP/IP Client Sockets in Networking
+TCP/IP Server Sockets in Networking
+TCP/IP protocol suite in in Computer Networks
+Table in Web Page Designing
+Telugu Literature
+Test Data Suit Preparation software testing strategy
+Test Drivers and Test Stubs software testing strategy
+Testing Objectives in Software Testing
+Testing for Functionality in Software Testing
+Testing for Performance in Software Testing
+Textile Technology in India and Ancient India
+The OSI reference model in in Computer Networks
+The Oldham-Hackman Job Characteristic Model in spm
+The Seven Limbs of the State in Ancient India
+The Vedas
+The representation of Women in Historical traditions in Society in Ancient India
+Theatre as Cultural Heritage of India
+Theories of origin of State in India
+Top-Down and Bottom-Up Design in Software Design
+Top-Down and Bottom-Up Testing Strategies in Software Testing
+Trade in Ancient India
+Transaction Processing in JDBC
+Transmission media in Computer Networks
+Transport layer protocols
+Types of beans in Enterprise Java Bean
+Types of connections in Computer Networks
+Types of digital data in big data
+UDP Transport layer protocol
+URL Connection in Networking
+URL in Networking
+Understanding Gender as a social category in Society in Ancient India
+Unit 1 Project Evaluation and Project Planning for the  notes of the course Software Project Management
+Unit 2 Project Life Cycle and Effort Estimation for the notes of the course Software Project Management
+Unit 3 Activity Planning and Risk Management for the notes of the course Software Project Management
+Unit 4 Project Management and Control for the  notes of the course Software Project Management in spm
+Unit 5 Staffing in Software Projects for the  notes of the course Software Project Management in spm
+Unit 1 Introduction to Big Data
+Unit 1 Introduction to Software Engineering
+Unit 1 Introduction to Web Technology
+Unit 1 Introductory Concepts of Computer Networks and Physical Layer
+Unit 2 Hadoop and Map Reduce
+Unit 2 Link layer in Computer Networks and Medium Access Control and Local Area Networks
+Unit 2 Software Requirement Specifications (SRS)
+Unit 2 Web Page Designing
+Unit 3 Hadoop Eco System and YARN , no SQL databases , MongoDB , Spark , Scala
+Unit 3 Network Layer in Computer Networks
+Unit 3 Scripting
+Unit 3 Software Design
+Unit 4 Enterprise Java Bean
+Unit 4 HDFS (Hadoop Distributed File System) and Hadoop Environment
+Unit 4 Software Testing
+Unit 4 Transport Layer in Computer Networks
+Unit 5 Application Layer in Computer Networks
+Unit 5 Servlets
+Unit 5 Software Maintenance and Software Project Management
+Unit Testing in Software Testing
+Urdu Literature in India
+User Defined Functions in Pig
+Using XML Processors in Web Page Designing
+Variable in Core Java
+Various Philosophical Doctrines in India
+Various Size Oriented Measures in Software Design
+Varnāshrama System in Society in Ancient India
+Vedic Religion in India
+Verification and Validation in SRS
+Visualizing Progress in spm
+Walk Through (Walkthrough) Static testing strategy
+Water Fall Model in SDLC
+Water Management in India and Ancient India
+Web Development Strategies
+Web Technology
+Window management in transport layer
+Working in Teams in spm
+World Wide Web
+Writing Technology in India and Ancient India
+Writing Web Projects
+XML in Web Page Designing
+XML schemes in Web Page Designing
+YARN
+Zookeeper
+Zookeeper concepts
+administering Hadoop in Hadoop Environment
+advanced indexing in HBase
+advanced usage of HBase
+aggregation in MongoDB
+airtel
+amazon codewhisper
+amazon codewhisper amazon codewhisper
+amazon codewhisper amazon codewhisper chatgpt
+amazon codewhisper amazon codewhisper chatgpt github copilot
+amazon codewhisper amazon codewhisper github copilot
+amazon codewhisper chatgpt
+amazon codewhisper chatgpt amazon codewhisper
+amazon codewhisper chatgpt github copilot
+amazon codewhisper github copilot
+analysis vs reporting in Big Data
+analytic processes and tools for Big Data
+analyzing data with Hadoop
+anatomy of a Map Reduce job run
+anatomy of a Spark job run
+auditing of Big Data
+basic concepts of Cryptography in application layer
+basic types and operators in Scala
+benefits of HDFS
+block abstraction in HDFS
+block sizes in HDFS
+built-in control structures in Scala
+capped collections in MongoDB
+challenges of HDFS
+chatgpt
+chatgpt github copilot
+classes and objects in Scala
+cluster setup and installation in Hadoop Environment
+cluster specification in Hadoop Environment
+coins as Cultural Heritage of India
+command line interface to HDFS
+comparison of Hive with traditional databases
+compliance of Big Data
+components of Hadoop
+compression in Hadoop io
+creating documents in MongoDB
+data flow in HDFS
+data format co
+data ingest with Flume and Scoop in HDFS
+data replication in HDFS
+data types in MongoDB
+deleting documents in MongoDB
+developing a Map Reduce application
+documents in Java script
+drama as Cultural Heritage of India
+drivers for Big Data
+etransmission  in transport layer
+failures in map reduce
+fair and capacity in Hadoop ecosystem
+file sizes in HDFS
+forms in Java script
+forms in Web Page Designing
+forwarding and delivery in network layer
+functions and closures in Scala
+functions in Java script
+github copilot
+history of Big Data innovation
+how Map Reduce works
+how Zookeeper helps in monitoring a cluster
+how does HDFS store
+how to build applications with Zookeeper
+indexing in MongoDB
+indian culture
+indian society
+indian tradition
+inheritance in Scala
+input formats in map reduce
+intelligent data analysis in Big Data
+introduction to AJAX in Java script
+introduction to Big Data platform
+introduction to Big SQL
+introduction to Big Sheets
+introduction to BigInsights
+introduction to Infosphere
+jio
+job scheduling in map reduce
+jobs in spark
+joins and subqueries in Hive
+layering principles with reference to Network Architecture in Computer Networks
+learning bridge algorithms in local area network
+modern data analytic tools for Big Data
+nature of data in Big Data
+network components in Computer Networks
+objects in Java script
+output formats in map reduce
+passport india
+passport india passport india
+presenting and using XML in Web Page Designing
+protection of Big Data
+protocols and standards in networks architecture in Computer Networks
+querying data in Hive
+querying documents in MongoDB
+read operations in HDFS
+sbi
+scaling out with Hadoop
+schedulers in Hadoop ecosystem
+schema design in HBase
+security in Hadoop in Hadoop Environment
+security of Big Data
+serialization in Hadoop io
+services in networks architecture in Computer Networks
+shuffle and sort in map reduce
+sorting and aggregating in Hive
+spanning tree algorithms in local area network
+spark applications
+stages and tasks in spark
+statements in Java script
+tables in Hive
+task execution in map reduce
+test data and local tests in map reduce
+the Mahabharata
+the Ramayana
+the Upanishads
+unit tests with MR unit
+updating documents in MongoDB
+user defined functions in Hive
+vodaphone
+write operations in HDFS
+Āshrama or the Stages of Life in Society in Ancient India
+how to drive a scooty
+how to drive a car
+how to drive a bike
+how to drive a truck
+how to drive a bus
+how to drive a train
+how to drive a plane
+how to drive a helicopter
+how to drive a ship
+how to drive a boat
+how to drive a submarine
+how to drive a rocket
+how to drive a space shuttle
+how to drive a cycle
+how to drive a motor cycle
+how to drive a rickshaw
+how to drive a tractor
+how to drive a jeep
+how to drive a van
+how to drive a lorry
+how to drive a crane
+how to drive a bulldozer
+how to drive a forklift
+how to drive a cart
+how to drive a scooter
+how to drive a moped
+how to drive a bicycle
+how to drive a motorbike
+how to drive a motor scooter
+how to make a passport
+how to make a passport in india
+how to make a driving license
+how to make a driving license in india
+how to make a pan card
+how to make a pan card in india
+how to make a voter id card
+how to make a voter id card in india
+how to make a adhar card
+how to make a adhar card in india
+how to make a ration card
+how to make a ration card in india
+how to make a birth certificate
+how to make a birth certificate in india
+how to make a death certificate
+how to make a death certificate in india
+how to make a marriage certificate
+how to make a marriage certificate in india
+how to make a divorce certificate
+how to make a divorce certificate in india
+how to make a domicile certificate
+how to make a domicile certificate in india
+how to make a income certificate
+how to make a income certificate in india
+how to make a caste certificate
+how to make a caste certificate in india
+how to make a character certificate
+how to make a character certificate in india
+how to make a medical certificate
+how to make a medical certificate in india
+how to make a transfer certificate
+how to make a transfer certificate in india
+how to make a bonafide certificate
+how to make a bonafide certificate in india
+how to make a salary certificate
+how to make a salary certificate in india
+how to make a experience certificate
+how to make a experience certificate in india
+how to make a provisional certificate
+how to make a provisional certificate in india
+how to make a migration certificate
+how to make a migration certificate in india
+how to make a community certificate
+how to make a community certificate in india
+how to update a passport
+how to update adhar card
+how to update pan card
+how to update voter id card
+how to update ration card
+how to update birth certificate
+Popular trends
+Creative ideas
+Life hacks
+Art tutorials
+Gardening tips
+Animal videos
+Historical documentaries
+Home improvement projects
+Educational lectures
+Sports highlights
+Movie trailers
+Comedy sketches
+Beauty tutorials
+Car reviews
+Music covers
+Tech reviews
+Gaming walkthroughs
+DIY projects
+Adventure videos
+Nature documentaries
+Health and fitness tips
+Celebrity interviews
+Educational experiments
+Artistic performances
+Educational debates
+How-to videos
+Fashion trends
+Product reviews
+Cooking tutorials
+Science demonstrations
+Financial advice
+Business advice
+Social media tips
+Photography tutorials
+Crafts and hobbies
+Travel tips
+Music festivals
+Tutorials on software and technology
+Home decorating tips
+Educational videos
+Life stories
+Inspirational talks
+Political discussions
+Social experiments
+
+Porn
+Obscene
+Vulgar
+Profane
+Lewd
+Lascivious
+Indecent
+Raunchy
+Salacious
+Prurient
+Suggestive
+Coarse
+Blasphemous
+Obscenity
+Profanity
+Smut
+Filth
+Trash
+Pornography
+Lewdness
+Obscene language
+Obscene material
+Indecent language
+Indecent material
+Nudity
+Sexual content
+Offensive language
+Explicit language
+Explicit material
+X-rated
+Racy
+Tasteless
+Suggestive language
+Suggestive material
+Vulgar language
+Vulgar material
+Profane language
+Profane material
+Porno
+Erotica
+Naughty
+Lewd language
+Lewd material
+Salacious language
+Salacious material
+Prurient language
+Prurient material
+Lascivious language
+Lascivious material
+Coarse language
+
+
+
+
+
+
+
+
+Alpha
+Alternative Minimum Tax (AMT)
+Annual report
+Annualized
+Annualized rate of return
+Asset allocation
+Asset class
+Average maturity
+Dollar cost averaging
+Dow Jones Industrial Average (Dow)
+Environmental, social and governance (ESG) integration
+Equities
+Equity fund
+Exclusionary investment strategy
+Inclusionary investment strategy
+Interest-rate risk
+Investment advisor
+Investment company
+Investment grade bonds
+Investment objective
+Junk bond
+Large-cap
+Letter of intent
+Lipper ratings
+Liquidity
+Loads (back-end, front-end and no-load)
+Balanced fund
+Bear market
+Benchmark
+Beta
+Blue chip
+Board of Trustees
+Bond
+Bond fund
+Breakpoint
+Bull market
+Stock market
+Nasdaq
+NYSE (New York Stock Exchange)
+Dow Jones
+Dividends
+Capital gain/loss
+Market cap
+Stock broker
+Volume
+Dollar-cost averaging
+Volatility
+Stock/share/equity
+Penny stock
+Real estate
+Mutual fund
+Index fund
+Hedge fund
+ETF (Exchange-traded fund)
+REITs (Real Estate Investment Trusts)
+Real estate crowdfunding
+DDoS (Distributed Denial of Service) - a term related to cybersecurity but mentioned in one of the search results
+Share market
+Equity
+Index
+Exchange
+Broker
+Trading
+Demat account
+IPO (Initial Public Offering)
+NSE (National Stock Exchange)
+BSE (Bombay Stock Exchange)
+Sensex
+Nifty
+Blue chip stocks
+Penny stocks
+Dividend
+Portfolio
+Market capitalization
+Market order
+Limit order
+Stop loss
+Circuit filters
+Bid/Ask price
+Margin trading
+Short selling
+Futures and options
+Call option
+Put option
+Strike price
+Intrinsic value
+Extrinsic value
+Fundamental analysis
+Technical analysis
+Candlestick chart
+Moving averages
+Resistance level
+Support level
+Breakout
+Trend
+Risk management
+Fund Family
+Fund Manager
+Holding Period
+Inception Date
+Income Fund
+Index Fund
+Initial Purchase
+Interest Rate
+Interest Rate Sensitivity
+Intermediate Bond Fund
+Acid Test Ratio
+Annual Fund Operating Expenses
+Asset Allocation
+Asset Allocation Fund
+Asset Management Company
+Automatic Investment Plan
+Automatic Reinvestment
+Back End Load
+Balanced Fund
+Bid or Sell Price
+Blue Chip Fund
+Net Asset Value Per Unit
+Net Assets
+No-load Fund
+Open Ended Schemes
+Operating Expense
+Payable Date
+Portfolio Manager
+Price/Book Ratio
+Prime Rate Fund
+R& T agents
+Redemption Fee
+Redemption Price
+Reinvestment Privilege
+Investment Objective
+Investment Yield
+Jobbers
+Level Load
+Liquid Fund
+Load
+Lock-in- Period
+Long-Term Bond Fund
+Long Term Capital Gain
+Management Fee
+Money Market Fund
+Mutual Fund
+Net Asset Value
+Debt Fund
+Deferred Sales Charge Schedule of Decline
+Distributor
+Dividend Plan
+Dividend Stripping
+Duration
+Entry Load
+Equity Fund
+Equity- Linked Savings Scheme
+Ex-Dividend Date
+Exchange Privilege
+Exit Load
+Expense Ratio
+Work from home
+Online jobs
+Freelancing
+Digital marketing
+Affiliate marketing
+Content writing
+Blogging
+Data entry
+Online surveys
+Online tutoring
+Social media marketing
+Virtual assistant
+Web development
+Graphic designing
+E-commerce
+Online trading
+Cryptocurrency
+Analyst
+Asset
+Balance sheet
+Bid
+Book value
+Capital gains
+Defined contribution
+Earnings per share (EPS)
+ETF
+Forex
+IRA
+Money market
+NASDAQ
+New York Stock Exchange
+Options
+Payment for order flow (PFOF)
+P/E ratio
+Recessions
+Registered Investment Advisor (RIA)
+Required Minimum Distributions (RMDs)
+S&P 500
+
+Homophobic
+Transphobic
+Queer
+Faggot
+Dyke
+Tranny
+Gender Bender
+Sissy
+She-male
+He-she
+LGBTQ+
+Lesbian
+Gay
+Bisexual
+Transgender
+Non-binary
+Intersex
+Genderqueer
+Pansexual
+Asexual
+Ally
+Cisgender
+Coming Out
+Drag Queen
+Gender Expression
+Genderfluid
+Heteronormative
+Heterosexual
+Homosocial
+Queer Theory
+Queerbaiting
+Sexual Orientation
+Transvestite
