@@ -1,0 +1,38 @@
+# Badges Configuration
+
+# General Badge Configuration
+# Style: flat-square is the default and MANDATORY.
+# User: chirag127 is the default and MANDATORY.
+
+# Badge Definitions
+# Format: name: { title: "Badge Title", url: "Shields.io URL", markdown: "Markdown code" }
+
+badges:
+  build_status:
+    title: "Build Status"
+    url: "https://img.shields.io/github/actions/workflow/user/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool/ci.yml?branch=main&style=flat-square"
+    markdown: "[![Build Status](https://img.shields.io/github/actions/workflow/user/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool/ci.yml?branch=main&style=flat-square)](https://github.com/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool/actions/workflows/ci.yml)"
+  code_coverage:
+    title: "Code Coverage"
+    url: "https://img.shields.io/codecov/c/github/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool?style=flat-square"
+    markdown: "[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool?style=flat-square)](https://codecov.io/gh/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool)"
+  tech_stack_python:
+    title: "Tech Stack: Python"
+    url: "https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python"
+    markdown: "[![Tech Stack: Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)](https://www.python.org/)"
+  tech_stack_cli:
+    title: "Tech Stack: CLI"
+    url: "https://img.shields.io/badge/CLI-Click-lightgrey?style=flat-square&logo=click"
+    markdown: "[![Tech Stack: CLI](https://img.shields.io/badge/CLI-Click-lightgrey?style=flat-square&logo=click)](https://github.com/pallets/click)"
+  linting:
+    title: "Linting: Ruff"
+    url: "https://img.shields.io/badge/linting-ruff-orange?style=flat-square&logo=ruff"
+    markdown: "[![Linting: Ruff](https://img.shields.io/badge/linting-ruff-orange?style=flat-square&logo=ruff)](https://github.com/astral-sh/ruff)"
+  license:
+    title: "License: CC BY-NC 4.0"
+    url: "https://img.shields.io/badge/License-CC%20BY--NC%204.0-green?style=flat-square"
+    markdown: "[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)"
+  github_stars:
+    title: "GitHub Stars"
+    url: "https://img.shields.io/github/stars/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool?style=flat-square"
+    markdown: "[![GitHub Stars](https://img.shields.io/github/stars/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool?style=flat-square)](https://github.com/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool)"
