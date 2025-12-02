@@ -1,38 +1,57 @@
-# Byte-compiled / Cache Files
-*.py[cod]
-*$py.class
+# Byte-compiled / optimized / script files
+*.pyc
 __pycache__/
-.pytest_cache/
-.ruff_cache/
+*.pyo
+*.pyd
 
-# Environment & Virtual Environments
-.venv/
-venv/
-env/
-
-# IDE & Editor Files
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# Build Artifacts (Python / General)
+# Distribution / packaging
+*.egg-info/
 build/
 dist/
-*.egg-info/
-.coverage
-htmlcov/
+*.egg
 
-# Python Specific: uv/pip dependencies
-.pnpm-debug.log
-/node_modules
+# PyInstaller
+# Usually these files are written by a python script from a template
+# before PyInstaller builds the application. Handle them with caution.
+*.spec
 
-# CLI Tool Specific (if any log files are generated)
+# Installer logs
 *.log
 
-# Distribution & Packaging
-.mypy_cache/
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.cache
+htmlcov/
+.pytest_cache/
 
-# Operating System Files
+# C extensions
+*.so
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# OS generated files
 .DS_Store
 Thumbs.db
+
+# Local environment variables
+.env
+.env.*.local
+
+# Ruff cache
+.ruff_cache/
+
+# Uvicorn / FastAPI logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
