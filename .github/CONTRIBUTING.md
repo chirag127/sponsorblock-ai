@@ -1,107 +1,96 @@
 # Contributing to TubeScript-YouTube-API-Automation-CLI-Tool
 
-Thank you for considering contributing to TubeScript-YouTube-API-Automation-CLI-Tool! We welcome all contributions, from bug reports and feature requests to code submissions.
+Thank you for considering contributing to TubeScript-YouTube-API-Automation-CLI-Tool! We welcome your help in making this project even better.
 
-This project adheres to the Apex Technical Authority standards, ensuring a high-velocity, zero-defect, and future-proof development process. Please familiarize yourself with these standards before contributing.
+## Code of Conduct
 
-## 1. Getting Started
+This project adheres to the Contributor Covenant Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to `chirag127@users.noreply.github.com`.
 
-### Prerequisites
+## How to Contribute
 
-*   **Python 3.10+:** Ensure you have a compatible Python version installed.
-*   **uv:** This project uses `uv` for package management. Install it following the [official `uv` installation guide](https://github.com/astral-sh/uv#installation).
-*   **Git:** For version control.
+We appreciate contributions of all kinds, from reporting bugs to suggesting new features and submitting pull requests.
 
-### Setting Up Your Development Environment
+### 1. Reporting Bugs
 
-1.  **Fork the Repository:** Create your own fork of the `chirag127/TubeScript-YouTube-API-Automation-CLI-Tool` repository.
-2.  **Clone Your Fork:** Clone your forked repository locally:
+If you find a bug, please open an issue on GitHub. Be sure to include:
+
+*   A clear and concise description of the bug.
+*   Steps to reproduce the bug.
+*   The expected behavior.
+*   The actual behavior.
+*   Your environment (e.g., Python version, OS).
+*   Any relevant logs or error messages.
+
+We use GitHub Issue Templates to standardize bug reports. Please select the `bug_report.md` template when creating a new issue.
+
+### 2. Suggesting Enhancements or Features
+
+If you have an idea for a new feature or an improvement, please open an issue on GitHub.
+
+*   Describe the proposed feature or enhancement.
+*   Explain why it would be beneficial.
+*   If applicable, provide mockups or examples.
+
+### 3. Submitting Pull Requests
+
+Contributions via pull requests are highly encouraged. Please follow these steps:
+
+1.  **Fork the Repository:** Create a fork of the `chirag127/TubeScript-YouTube-API-Automation-CLI-Tool` repository.
+2.  **Clone Your Fork:** Clone your forked repository to your local machine:
     bash
     git clone https://github.com/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool.git
     cd TubeScript-YouTube-API-Automation-CLI-Tool
     
-3.  **Create a Virtual Environment:** It is highly recommended to use a virtual environment to manage dependencies.
+3.  **Create a New Branch:** Create a feature branch for your changes:
     bash
-    python -m venv .venv
-    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+    git checkout -b feat/your-feature-name
     
-4.  **Install Dependencies:** Use `uv` to install the project dependencies:
+    (Use `fix/` for bug fixes, `feat/` for new features, `chore/` for maintenance, etc.)
+4.  **Install Dependencies:** Ensure you have the development dependencies installed.
     bash
-    uv install --frozen-if-exists
+    uv pip install --dev
     
-5.  **Install Pre-commit Hooks:** This project uses pre-commit for automated checks (linting, formatting).
-    bash
-    pip install pre-commit
-    pre-commit install
-    
-
-## 2. Contribution Workflow
-
-We follow a standard Git workflow for contributions:
-
-1.  **Create a Branch:** Create a new branch for your feature or bug fix:
-    bash
-    git checkout -b feature/your-feature-name
-    # or
-    git checkout -b fix/your-bug-fix
-    
-2.  **Make Your Changes:** Implement your changes. Ensure your code is well-commented and follows the project's coding standards.
-3.  **Test Your Changes:** Write comprehensive tests for your changes. Run the test suite:
+5.  **Make Your Changes:** Implement your feature or fix the bug.
+6.  **Run Tests:** Ensure all tests pass:
     bash
     pytest
     
-4.  **Lint and Format:** Ensure your code passes linting and formatting checks. The pre-commit hooks will run automatically on commit. You can also run them manually:
+    *If you are adding new functionality, please add corresponding tests.*
+7.  **Lint and Format:** Ensure your code adheres to project standards:
     bash
     ruff check .
     ruff format .
     
-5.  **Commit Your Changes:** Commit your changes with clear and concise messages. Follow [Conventional Commits](https://www.conventionalcommits.org/) if applicable.
+8.  **Commit Your Changes:** Commit your changes with a clear and descriptive message.
     bash
-    git commit -m "feat: Add new YouTube API endpoint integration"
+    git commit -m "feat: Add new feature X for YouTube API automation"
     
-6.  **Push Your Branch:** Push your branch to your fork on GitHub.
+9.  **Push to Your Fork:** Push your changes to your feature branch on your fork:
     bash
-    git push origin feature/your-feature-name
+    git push origin feat/your-feature-name
     
-7.  **Open a Pull Request (PR):** Open a pull request from your branch to the `main` branch of the `chirag127/TubeScript-YouTube-API-Automation-CLI-Tool` repository.
+10. **Open a Pull Request:** Create a pull request from your feature branch on your fork to the `main` branch of the `chirag127/TubeScript-YouTube-API-Automation-CLI-Tool` repository.
 
-## 3. Guidelines
+### Development Workflow
 
-### Code Standards
+*   **Environment:** We use Python 3.10+ with `uv` for dependency management.
+*   **Linting & Formatting:** `Ruff` is used for static analysis and code formatting. It enforces the project's coding standards.
+*   **Testing:** `Pytest` is used for unit and integration testing. Ensure all tests pass before submitting a PR.
+*   **AI Integration:** For AI-related changes, ensure you are familiar with the `Google Gemini API` and have appropriate API keys configured (refer to development setup instructions).
 
-*   **Python:** Adhere to PEP 8 guidelines, with deviations handled by `Ruff` configuration.
-*   **Modularity:** Follow the Modular Monolith architectural pattern. Ensure clear separation of concerns and well-defined interfaces between modules.
-*   **Testing:** All new code must be accompanied by relevant unit and/or integration tests.
-*   **Documentation:** Write clear and concise docstrings for all functions, classes, and modules.
+### Pull Request Guidelines
 
-### AI Integration Standards
+*   **Descriptive Title:** Use a clear title that summarizes the changes.
+*   **Detailed Description:** Explain what the PR does, why it's needed, and how it was tested.
+*   **Link to Issue:** If the PR closes an issue, reference it using keywords like `Closes #123`.
+*   **Code Reviews:** Be prepared to respond to feedback from reviewers.
 
-*   **API Usage:** When interacting with external AI services (e.g., Google Gemini), ensure robust error handling, rate limiting considerations, and adherence to API usage policies.
-*   **Prompt Engineering:** Develop clear, effective, and contextually relevant prompts for AI models. Document prompt strategies.
-*   **Model Versioning:** Be mindful of AI model versions and potential compatibility issues.
+### Dependencies
 
-### Commit Messages
+When adding new dependencies, please ensure they are necessary, well-maintained, and compatible with the project's license (CC BY-NC).
 
-*   Use descriptive commit messages that clearly explain the purpose of the change.
-*   Refer to the [Apex Technical Authority](https://github.com/chirag127/Apex-Technical-Authority) for advanced commit message guidelines.
+## Getting Started
 
-## 4. Reporting Issues
+Refer to the `README.md` file for detailed setup and installation instructions.
 
-If you encounter a bug or have a feature request, please open an issue on the GitHub repository:
-
-*   **Bug Reports:** Provide a clear title, detailed steps to reproduce the bug, expected behavior, and actual behavior. Include relevant environment information (Python version, OS, etc.).
-*   **Feature Requests:** Clearly describe the proposed feature and the problem it solves. Provide use cases and potential benefits.
-
-## 5. Code of Conduct
-
-This project adheres to the [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/). By participating, you are expected to uphold this code. Please report any unacceptable behavior to the project maintainers.
-
-## 6. License
-
-This project is licensed under the [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
-
---- 
-
-**Contact:** For any questions, please reach out via GitHub Issues or Discussions.
-
-**Repository:** [TubeScript-YouTube-API-Automation-CLI-Tool](https://github.com/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool)
+Thank you for contributing!
