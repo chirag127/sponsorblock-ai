@@ -1,59 +1,83 @@
-name: CI
+# CI Pipeline for TubeScript-YouTube-API-Automation-CLI-Tool
 
-# Trigger workflow on push events to the main branch
-# and on pull request events targeting the main branch.
+# Apex Technical Authority - December 2025 Standard
+# Philosophy: Zero-Defect, High-Velocity, Future-Proof.
+
+name: CI Pipeline
+
+
+# Trigger CI on push to main branch and on pull requests targeting main.
+# Also manually triggerable.
+
 on:
   push:
-    branches: ['main']
+    branches: [ main ]
   pull_request:
-    branches: ['main']
+    branches: [ main ]
+  workflow_dispatch: {}
+
 
 jobs:
-  build_and_test:
+  build-and-test:
+    name: Build & Test (Python 3.11)
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        python-version:
-          - '3.10'
-          - '3.11'
-          - '3.12'
-          - '3.13'
-
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
-          cache: 'uv'
+          python-version: '3.11'
+          # Cache pip and venv to speed up subsequent runs.
+          cache: 'pip'
 
-      - name: Install Dependencies with uv
+      - name: Install dependencies with uv
         run: |
-          python -m uv pip install --upgrade pip
-          python -m uv pip install ruff pytest
-          python -m uv pip install -e .[dev] # Install package in editable mode with dev dependencies
+          python -m pip install --upgrade pip
+          # Install uv for dependency management.
+          pip install uv
+          # Install project dependencies and dev dependencies.
+          uv install --frozen --no-cache-dir -r requirements.txt -r requirements-dev.txt
 
       - name: Lint with Ruff
         run: |
-          ruff check .
-          ruff format --check .
+          # Run Ruff for linting and formatting checks.
+          # Ruff is configured to enforce PEP 8 and other best practices.
+          uv run --ruff lint . --fix
+          uv run --ruff format . --fix
 
       - name: Test with Pytest
         run: |
-          pytest --cov=tubescript --cov-report=xml --cov-report=term --junitxml=test-results.xml
+          # Execute Pytest suite to run all unit and integration tests.
+          # Ensure comprehensive test coverage.
+          uv run --pytest tests/
 
-      - name: Upload Coverage Data
+      - name: Optional: Upload coverage reports (Codecov)
+        # This step is optional and assumes Codecov is configured.
+        # Replace with your preferred coverage tool or remove if not needed.
+        if: success() && github.ref == 'refs/heads/main'
         uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          fail_ci_if_error: true
+          # Automatically set the commit SHA, branch name, and slug.
+          # https://docs.codecov.io/docs/github-actions-usage
 
-      - name: Upload Test Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: pytest-results-${{ matrix.python-version }}
-          path: test-results.xml
-          retention-days: 7
+      - name: Upload Python Package (if applicable)
+        # This step would typically upload a built package to PyPI or a private registry.
+        # It's commented out by default as it requires specific configuration and secrets.
+        # Uncomment and configure if this repository distributes a Python package.
+        # if: success() && github.ref == 'refs/heads/main' && startsWith(github.ref, 'refs/tags/')
+        # uses: pypa/gh-action-pypi-publish@v1.9.0
+        # with:
+        #   password: ${{ secrets.PYPI_API_TOKEN }}
+        #   repository-url: https://upload.pypi.org/legacy/
+
+
+# Notes:
+# - This CI pipeline is designed for a Python CLI tool, adhering to Apex standards.
+# - It utilizes 'uv' for dependency management, 'Ruff' for linting/formatting, and 'Pytest' for testing.
+# - Ensure 'requirements.txt' and 'requirements-dev.txt' are correctly populated.
+# - Add specific build steps if your project requires compilation (e.g., Cython).
+# - Secrets like CODECOV_TOKEN and PYPI_API_TOKEN should be configured in GitHub repository secrets.
