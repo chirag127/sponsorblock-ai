@@ -1,73 +1,62 @@
 ---
-name: "🐛 Bug Report"
-about: "Report an unexpected error or incorrect behavior in TubeScript."
-title: "[BUG]: "
-labels: ["bug", "triage"]
-assignees: ["chirag127"]
----
-
-Thank you for taking the time to report a bug in **TubeScript-YouTube-API-Automation-CLI-Tool**! Your detailed report helps us improve the stability and functionality of this project.
-
-Please ensure you have searched existing issues to avoid duplicates. If you find a similar issue, please add your feedback there instead.
-
-## 🚨 Before Submitting
-
-*   Have you read the [Troubleshooting Guide](https://github.com/chirag127/TubeScript-YouTube-API-Automation-CLI-Tool/blob/main/.github/CONTRIBUTING.md#troubleshooting)?
-*   Are you running the latest version of TubeScript?
-*   Is your Python environment correctly set up (`uv install` or `pip install -r requirements.txt`)?
-*   Are your YouTube API credentials correctly configured and valid?
+name: Bug Report
+about: "Submit a bug report to help us improve"
+title: "[BUG] - Concise Title Summarizing The Issue"
+labels: bug, needs-triage
+assignees:
 
 ---
 
-## 🐞 Describe the Bug
 
-A clear and concise description of what the bug is.
+**Is this a bug in the Apex AI Agent directives or its execution?**
+(Please answer Yes/No. If Yes, describe the specific directive that is problematic. If No, proceed to the next section.)
 
-## Reproduce Steps
+Yes/No: 
+
+**Describe the bug**
+
+A clear and concise description of what the bug is. What did you expect to happen, and what actually happened?
+
+**To Reproduce**
 
 Steps to reproduce the behavior:
+1. Go to '...' 
+2. Click on '....'
+3. Scroll down to '...'
+4. See error
 
-1.  Run `tubescript <command>` with `...`
-2.  See error `...`
+**Expected Behavior**
 
-## 📝 Expected Behavior
+Describe what you expected to happen.
 
-A clear and concise description of what you expected to happen.
+**Actual Behavior**
 
-## 💥 Actual Behavior
+Describe what actually happened.
 
-A clear and concise description of what actually happened, including any error messages, stack traces, or incorrect outputs.
+**Environment**
 
-## 📸 Screenshots or Recordings (Optional)
+*   OS: [e.g., Windows, macOS, Linux]
+*   Python Version: [e.g., 3.10.12]
+*   Tool Version: [e.g., TubeScript-YouTube-API-Automation-CLI-Tool v1.0.0]
+*   YouTube API Client Version: [If applicable]
 
-If applicable, add screenshots or a short video to help explain your problem.
+**Screenshots**
 
-## 🖥️ Environment
+If applicable, add screenshots to help explain your problem. (Please ensure no PII is exposed).
 
-Please provide the following information about your environment:
+**Additional Context**
 
-*   **Operating System:** [e.g., macOS Ventura 13.5, Windows 11, Ubuntu 22.04 LTS]
-*   **Python Version:** `python --version` (e.g., Python 3.10.12)
-*   **TubeScript Version:** `tubescript --version` (or commit hash if running from source)
-*   **Terminal/Shell:** [e.g., iTerm2, Windows Terminal, Bash, Zsh]
-*   **YouTube API Client Library Version:** (if applicable)
+Add any other context about the problem here. For example, specific commands run, configuration files, or related issues.
 
-## 📜 Relevant Log Output/Console Errors (If Any)
+**Logs**
 
-text
-Paste any relevant error messages, stack traces, or log output here.
+If possible, paste any relevant error logs or output from the CLI tool. This can be extremely helpful for debugging.
 
+bash
+# Paste logs here
 
-## 💡 Additional Context
-
-Add any other context about the problem here (e.g., specific data used, recent changes to your environment, other related issues).
 
 ---
 
-## ✅ Bug Report Checklist
 
-*   [ ] I have checked for existing issues that describe this bug.
-*   [ ] I have provided clear and concise steps to reproduce the bug.
-*   [ ] I have included all relevant environment details.
-*   [ ] I have provided any relevant error messages or log output.
-*   [ ] I understand that providing incomplete information may lead to delays in resolving my issue.
+_This issue template is designed to adhere to the **Apex Technical Authority** standards, ensuring clear, actionable bug reports that facilitate rapid diagnosis and resolution. By providing detailed information, you help maintain the **Zero-Defect, High-Velocity** principle of our development process._
