@@ -1,6 +1,5 @@
 import openai
 
-
 with open("wiki_sbp.txt", "r") as file:
     data = file.read()
 

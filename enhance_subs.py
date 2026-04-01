@@ -1,6 +1,7 @@
 """
 This module contains the function that corrects the transcription.
 """
+
 import json
 import random
 from time import sleep
@@ -208,13 +209,11 @@ def return_corrected_transcription(
 
     correct_transcription = correct_transcription.strip()
 
-    print(
-        f"""Incorrect transcription: {transcription}
+    print(f"""Incorrect transcription: {transcription}
 
 Google translate: {translation}
 
-Correct transcription: {correct_transcription}"""
-    )
+Correct transcription: {correct_transcription}""")
     return correct_transcription
 
 
@@ -283,11 +282,9 @@ def return_corrected_transcription_from_playgroud(transcription):
 
     corrected_transcription = corrected_transcription.strip()
 
-    print(
-        f"""Incorrect transcription: {transcription}
+    print(f"""Incorrect transcription: {transcription}
 
-Correct transcription: {corrected_transcription}"""
-    )
+Correct transcription: {corrected_transcription}""")
 
     return corrected_transcription
 

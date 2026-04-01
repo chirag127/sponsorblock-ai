@@ -1,6 +1,7 @@
-from reques import post_url
-import string
 import random
+import string
+
+from reques import post_url
 
 # 'deviceId': 'x9h-Ep7cCliKiB412345', # 20 characters
 

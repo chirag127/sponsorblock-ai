@@ -1,26 +1,23 @@
-from model import get_model_tokenizer_classifier, InferenceArguments
-from utils import jaccard, safe_print
-from transformers import HfArgumentParser
-from preprocess import clean_text
-from shared import DatasetArguments, GeneralArguments, seconds_to_time
-from predict import predict
-from segment import (
-    extract_segment,
-    word_start,
-    word_end,
-    SegmentationArguments,
-    add_labels_to_words,
-)
-from youtube_transcript_api_words import get_words
-import pandas as pd
-from dataclasses import dataclass, field
-from typing import Optional
-from tqdm import tqdm
 import json
+import logging
 import os
 import random
+from dataclasses import dataclass, field
+from typing import Optional
 from urllib.parse import quote
-import logging
+
+import pandas as pd
+from tqdm import tqdm
+from transformers import HfArgumentParser
+
+from model import InferenceArguments, get_model_tokenizer_classifier
+from predict import predict
+from preprocess import clean_text
+from segment import (SegmentationArguments, add_labels_to_words,
+                     extract_segment, word_end, word_start)
+from shared import DatasetArguments, GeneralArguments, seconds_to_time
+from utils import jaccard, safe_print
+from youtube_transcript_api_words import get_words
 
 logging.basicConfig()
 logger = logging.getLogger(__name__)

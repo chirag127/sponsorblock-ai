@@ -1,13 +1,12 @@
 """
 Gist functions.
 """
-import time
-from f import (
-    print_status_and_text_from_response,
-    wait_for_time_between_1_and_specified_time,
-)
 
-from reques import request_url, get_url
+import time
+
+from f import (print_status_and_text_from_response,
+               wait_for_time_between_1_and_specified_time)
+from reques import get_url, request_url
 
 
 def return_lines_from_gist(gist_id, file_name):

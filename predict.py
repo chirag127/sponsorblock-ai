@@ -1,25 +1,17 @@
-from transformers import HfArgumentParser
-from dataclasses import dataclass, field
 import logging
-from shared import (
-    CustomTokens,
-    extract_sponsor_matches,
-    GeneralArguments,
-    seconds_to_time,
-)
-from segment import (
-    generate_segments,
-    extract_segment,
-    MIN_SAFETY_TOKENS,
-    SAFETY_TOKENS_PERCENTAGE,
-    word_start,
-    word_end,
-    SegmentationArguments,
-)
+from dataclasses import dataclass, field
+
+from transformers import HfArgumentParser
+
 import preprocess
 import youtube_transcript_api_words
 from errors import TranscriptError
-from model import get_model_tokenizer_classifier, InferenceArguments
+from model import InferenceArguments, get_model_tokenizer_classifier
+from segment import (MIN_SAFETY_TOKENS, SAFETY_TOKENS_PERCENTAGE,
+                     SegmentationArguments, extract_segment, generate_segments,
+                     word_end, word_start)
+from shared import (CustomTokens, GeneralArguments, extract_sponsor_matches,
+                    seconds_to_time)
 
 logging.basicConfig()
 logger = logging.getLogger(__name__)

@@ -1,7 +1,8 @@
 import os
+from concurrent import futures
+
 from f import WORKING_DIRECTORY
 from yt_api import video_ids_from_main_id
-from concurrent import futures
 
 
 def remove_dead_ci():

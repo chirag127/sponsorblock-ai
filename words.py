@@ -1,4 +1,5 @@
 import re
+
 from f import color
 from reques import get_url_with_retry
 from yt_api import info_from_video_id
@@ -125,7 +126,6 @@ def divide_the_text_by_space_with_syllables(words):
 
 
 def divide_the_text_by_space_without_syllables(words):
-
     """
     It takes a list of words, and for each word, it splits the text by space,
     and then adds the start
@@ -295,7 +295,6 @@ if __name__ == "__main__":
     video_id = "Q_xojS5LRRA"
 
     words, _ = get_words_and_is_generated_from_video_info_or_video_id(video_id=video_id)
-
 
     words = convert_overlapping_words_to_non_overlapping_words(words)
 

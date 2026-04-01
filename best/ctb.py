@@ -1,9 +1,9 @@
 # Physical: {X=695,Y=668};
 # Physical: {X=634,Y=823};
 
-import pyautogui
-
 from time import sleep
+
+import pyautogui
 
 
 def main():

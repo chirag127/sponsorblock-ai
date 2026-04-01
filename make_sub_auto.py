@@ -9,13 +9,8 @@ from datetime import datetime
 from typing import Tuple
 
 from enhance_subs import return_corrected_transcription
-from f import (
-    append_to_file,
-    color,
-    execute,
-    max_max_workers_for_the_pp,
-    write_video_id_in_cache,
-)
+from f import (append_to_file, color, execute, max_max_workers_for_the_pp,
+               write_video_id_in_cache)
 from words import divide_the_text_by_space
 
 MINIMUM_SUBSCRIBERS_FOR_AUTOSUB = 500000
@@ -75,10 +70,8 @@ def get_words_by_autosub(
             print(f"the video {video_id} is too old with delta days {delta_days}")
             return nop_data, False, is_recognized
         if delta_days < 1 and subscriber < 1000000:
-            print(
-                f"""{color.GREEN}{color.BOLD}Video {video_id} has no subtitles
-                and has been skipped{color.END}"""
-            )
+            print(f"""{color.GREEN}{color.BOLD}Video {video_id} has no subtitles
+                and has been skipped{color.END}""")
             write_video_id_in_cache(video_id, "recent")
             return new_data, False, is_recognized
 
@@ -238,8 +231,6 @@ in video {video_id} {color.END}"""
             )
             return [], False, is_recognized
     except Exception as error:  # pylint: disable=broad-except
-        print(
-            f"""{color.RED}{color.BOLD}Error in transcribing the video, error {error}
-in video {video_id} {color.END}"""
-        )
+        print(f"""{color.RED}{color.BOLD}Error in transcribing the video, error {error}
+in video {video_id} {color.END}""")
         return [], False, is_recognized

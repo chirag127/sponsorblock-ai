@@ -1,6 +1,7 @@
 """This module is used to classify the data into different categories."""
 
 from transformers import TextClassificationPipeline
+
 import preprocess
 import segment
 import youtube_transcript_api_words

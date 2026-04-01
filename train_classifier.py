@@ -1,4 +1,4 @@
-""" Finetuning the library models for sequence classification."""
+"""Finetuning the library models for sequence classification."""
 
 import logging
 import os
@@ -7,28 +7,17 @@ from dataclasses import dataclass
 
 import datasets
 import numpy as np
-
 import transformers
-from transformers import (
-    DataCollatorWithPadding,
-    EvalPrediction,
-    HfArgumentParser,
-    Trainer,
-    TrainingArguments,
-    set_seed,
-)
+from transformers import (DataCollatorWithPadding, EvalPrediction,
+                          HfArgumentParser, Trainer, TrainingArguments,
+                          set_seed)
 from transformers.utils import check_min_version
 from transformers.utils.versions import require_version
-from shared import (
-    CATEGORIES,
-    DatasetArguments,
-    prepare_datasets,
-    load_datasets,
-    CustomTrainingArguments,
-    train_from_checkpoint,
-    get_last_checkpoint,
-)
-from model import get_model_tokenizer, ModelArguments
+
+from model import ModelArguments, get_model_tokenizer
+from shared import (CATEGORIES, CustomTrainingArguments, DatasetArguments,
+                    get_last_checkpoint, load_datasets, prepare_datasets,
+                    train_from_checkpoint)
 
 # Will error if the minimal version of Transformers is not installed. Remove at your own risks.
 check_min_version("4.17.0")

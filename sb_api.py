@@ -1,33 +1,21 @@
 """This module is used to provide the functionality of the sponsor block api"""
 
-
 import os
 import random
 import subprocess
 
 import pandas
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
 
-from f import (
-    ALL_SB_ACTION_TYPES,
-    ALL_SB_CAT,
-    SB_HOST,
-    SB_HOST_1,
-    WORKING_DIRECTORY,
-    append_to_file,
-    color,
-    end_of_video,
-    execute,
-    id_generator,
-    print_status_and_text_from_response,
-    random_choice,
-    user_ids_from_segment_type,
-    wait_for_time_between_1_and_specified_time,
-    write_video_id_in_cache,
-    get_total_segment_time,
-)
 from config import ua
+from f import (ALL_SB_ACTION_TYPES, ALL_SB_CAT, SB_HOST, SB_HOST_1,
+               WORKING_DIRECTORY, append_to_file, color, end_of_video, execute,
+               get_total_segment_time, id_generator,
+               print_status_and_text_from_response, random_choice,
+               user_ids_from_segment_type,
+               wait_for_time_between_1_and_specified_time,
+               write_video_id_in_cache)
 from reques import ModelResponse, get_url, get_url_with_retry, post_url
 
 
@@ -141,7 +129,6 @@ def post_vote(uuid, vote_type="d", user_id=None):
 
 
 def uuids_from_sbb(identifier, identifier_type="video"):
-
     """scraps the uuids from the sponsor block browser url
     and returns them"""
     if identifier_type == "video":
@@ -306,7 +293,6 @@ def make_request(
     retry=True,
     retry_time=2,
 ):  # sourcery skip: low-code-quality
-
     """make a post request to submit the segment to sponsor block api"""
     video_duration = end_of_video(duration)
 

@@ -62,11 +62,9 @@ def request_url(request_type, url, timeout=TIMEOUT_TIME, **kwargs):
         return response
 
     except Timeout:
-        print(
-            f"""{color.RED}Timeout {url}
+        print(f"""{color.RED}Timeout {url}
 {request_type} request,
-timeout of {timeout} seconds{color.END}"""
-        )
+timeout of {timeout} seconds{color.END}""")
 
     except Exception as error:  # pylint: disable=broad-except
 
@@ -85,7 +83,6 @@ def post_url(url, timeout=TIMEOUT_TIME, **kwargs):
 
 
 def request_urls(request_type, urls, max_workers=100, timeout=TIMEOUT_TIME):
-
     """Returns a list of responses for a list of urls."""
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         responses = executor.map(

@@ -14,20 +14,12 @@ import requests
 from tqdm import tqdm
 from transformers import HfArgumentParser
 
-
 import model as model_module
 import segment
-from shared import (
-    ACTION_OPTIONS,
-    CATEGORIES,
-    CATEGORY_OPTIONS,
-    END_SEGMENT_TEMPLATE,
-    START_SEGMENT_TEMPLATE,
-    CustomTokens,
-    DatasetArguments,
-    GeneralArguments,
-    extract_sponsor_matches_from_text,
-)
+from shared import (ACTION_OPTIONS, CATEGORIES, CATEGORY_OPTIONS,
+                    END_SEGMENT_TEMPLATE, START_SEGMENT_TEMPLATE, CustomTokens,
+                    DatasetArguments, GeneralArguments,
+                    extract_sponsor_matches_from_text)
 from utils import jaccard
 from youtube_transcript_api_words import get_words
 
@@ -697,10 +689,10 @@ def main():
                                 f"{START_SEGMENT_TEMPLATE.format(category)} {w} {END_SEGMENT_TEMPLATE.format(category)}"
                             )
 
-                        d[
-                            "extracted"
-                        ] = f" {CustomTokens.BETWEEN_SEGMENTS.value} ".join(
-                            extracted_texts
+                        d["extracted"] = (
+                            f" {CustomTokens.BETWEEN_SEGMENTS.value} ".join(
+                                extracted_texts
+                            )
                         )
                         print(json.dumps(d), file=positive)
 

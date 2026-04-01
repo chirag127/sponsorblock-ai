@@ -1,4 +1,5 @@
 """This module contains functions that are used in the main module."""
+
 import contextlib
 import json
 import os
@@ -39,17 +40,13 @@ def print_status_and_text_from_response(response, video_id=None):
         text = f"{text[:200]}..."
 
     if video_id:
-        print(
-            f"""{color.BLUE}Video ID: {video_id}
+        print(f"""{color.BLUE}Video ID: {video_id}
 Response Status Code: {status}
-Response Text: {text}{color.END}"""
-        )
+Response Text: {text}{color.END}""")
 
     else:
-        print(
-            f"""{color.BLUE}Response Status Code: {status}
-Response Text: {text}{color.END}"""
-        )
+        print(f"""{color.BLUE}Response Status Code: {status}
+Response Text: {text}{color.END}""")
 
 
 def get_size(bytes_in_get_size, suffix="B"):

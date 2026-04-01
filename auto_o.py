@@ -2,21 +2,16 @@
 make outro for a id
 """
 
-from concurrent.futures import ProcessPoolExecutor
 import os
 import sys
+from concurrent.futures import ProcessPoolExecutor
 
 from auto_im import video_ids_urls_from_id_segment_category
-from f import (
-    WORKING_DIRECTORY,
-    end_of_video,
-    process_responses,
-    random_choice,
-    user_ids_from_segment_type,
-)
+from f import (WORKING_DIRECTORY, end_of_video, process_responses,
+               random_choice, user_ids_from_segment_type)
+from reques import post_url
 from sb_api import return_url_to_post
 from yt_api import duration_from_video_id
-from reques import post_url
 
 user_ids = user_ids_from_segment_type()
 

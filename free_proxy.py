@@ -1,6 +1,7 @@
 """This module contains the FreeProxy class."""
-from concurrent.futures import ThreadPoolExecutor
+
 import random
+from concurrent.futures import ThreadPoolExecutor
 
 import lxml.html as lh
 import requests

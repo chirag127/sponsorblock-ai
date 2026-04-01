@@ -1,7 +1,7 @@
 import traceback
+
 from f import PING_TIMEOUT_TIME, print_status_and_text_from_response
-from reques import get_url, get_urls
-from reques import TIMEOUT_TIME
+from reques import TIMEOUT_TIME, get_url, get_urls
 
 
 def get_location(proxy_addresses=None):

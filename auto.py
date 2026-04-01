@@ -1,58 +1,37 @@
 """The main file for the auto segmentation."""
 
-
 import contextlib
 import os
 import random
-import sys
 import traceback
 from concurrent import futures
 from datetime import datetime
 from functools import partial
 
-import psutil
-from add_to_watch_later import add_videos_to_watch_later
 
+from add_to_watch_later import add_videos_to_watch_later
 from chapters import get_chapters_with_start_and_end_time
-from f import (
-    WORKING_DIRECTORY,
-    all_channel_ids,
-    color,
-    end_of_video,
-    is_english,
-    max_max_workers_for_the_pp,
-    merge_segments,
-    random_choice,
-    return_segment,
-    segment_duration_from_start_and_end,
-    system_information,
-    user_ids_from_segment_type,
-    wait_for_time_between_1_and_specified_time,
-    write_video_id_in_cache,
-    yt_link_with_segments,
-    append_to_file,
-    get_all_auto_channel_ids,
-)
+from f import (WORKING_DIRECTORY, all_channel_ids, append_to_file, color,
+               end_of_video, get_all_auto_channel_ids, max_max_workers_for_the_pp, merge_segments, random_choice,
+               return_segment, segment_duration_from_start_and_end,
+               user_ids_from_segment_type,
+               wait_for_time_between_1_and_specified_time,
+               write_video_id_in_cache, yt_link_with_segments)
 from ftr import get_location
 from make_sub_auto import get_words_by_autosub
 from model import get_model_tokenizer_classifier
 from predict import PredictArguments, SegmentationArguments
 from predict import predict as pred
-from youtube_transcript_api_words import get_words
 from sb_api import make_request, segments_stats_for_video_id
 from shared import GeneralArguments
 from silence import make_silence_all_segments
 from skip_sponsor_api import get_skip_sponsor_api_response
 from sync_already_run import sync_already_run
-from words import (
-    get_words_from_video_info,
-    remove_unnecessary_words,
-)
-from yt_api import (
-    info_from_video_id,
-    not_already_run_video_ids_from_video_ids_and_category,
-    video_ids_from_main_id,
-)
+from words import get_words_from_video_info, remove_unnecessary_words
+from youtube_transcript_api_words import get_words
+from yt_api import (info_from_video_id,
+                    not_already_run_video_ids_from_video_ids_and_category,
+                    video_ids_from_main_id)
 
 full_sponsor_user_ids = user_ids_from_segment_type("full_sponsor")
 
@@ -406,11 +385,9 @@ def make_segment(
     video_info = info_from_video_id(video_id)
 
     if not video_info:
-        print(
-            f"""{color.DARK_PURPLE}Video not found
+        print(f"""{color.DARK_PURPLE}Video not found
 sbb is at {sbb_url}
-hm at {url}{color.END}"""
-        )
+hm at {url}{color.END}""")
         write_video_id_in_cache(video_id, "recent")
         return None
 
@@ -433,14 +410,14 @@ hm at {url}{color.END}"""
 
     title = title.lower()
 
-#     string_to_check_for_english = title + " " + channel_name
-#     if not is_english(string_to_check_for_english):
-#         print(
-#             f"""{color.RED}Not English in {video_id} for the title {title}
-# channel name {channel_name}{color.END}"""
-#         )
-#         write_video_id_in_cache(video_id)
-#         return None
+    #     string_to_check_for_english = title + " " + channel_name
+    #     if not is_english(string_to_check_for_english):
+    #         print(
+    #             f"""{color.RED}Not English in {video_id} for the title {title}
+    # channel name {channel_name}{color.END}"""
+    #         )
+    #         write_video_id_in_cache(video_id)
+    #         return None
 
     if all_auto_channel_ids_processing is True:
         if (channel_id not in all_channel_ids) and (
@@ -595,10 +572,8 @@ hm at {url}{color.END}"""
         print(f"{color.RED}Video is {delta.days} days old{color.END}")
 
         if recognize_speech:
-            print(
-                f"""{color.RED}Video has no subtitles
-    {print_hf_and_sbb_url(video_id)}"""
-            )
+            print(f"""{color.RED}Video has no subtitles
+    {print_hf_and_sbb_url(video_id)}""")
             print(
                 f"{color.GREEN}getting words for video {video_id} using sr{color.END}"
             )
@@ -614,10 +589,8 @@ hm at {url}{color.END}"""
             print(f"{color.GREEN}got words for video {video_id} using sr{color.END}")
 
         else:
-            print(
-                f"""{color.RED}Video has no subtitles
-no sr{color.END}"""
-            )
+            print(f"""{color.RED}Video has no subtitles
+no sr{color.END}""")
             return None
 
     else:
@@ -667,10 +640,8 @@ no sr{color.END}"""
 
             print(traceback.format_exc())
             wait_for_time_between_1_and_specified_time(60)
-            print(
-                f"""{color.RED}Could not load transcript for {video_id}
-{print_hf_and_sbb_url(video_id)}{color.END}"""
-            )
+            print(f"""{color.RED}Could not load transcript for {video_id}
+{print_hf_and_sbb_url(video_id)}{color.END}""")
             if recognize_speech and (random.randint(0, 100) < 5):
                 print(f"{color.GREEN}getting words for {video_id} using sr{color.END}")
                 words, is_generated, is_recognized = get_words_by_autosub(
@@ -690,11 +661,9 @@ no sr{color.END}"""
 
     if not words:
         print("words is empty", video_id)
-        print(
-            f"""{color.BLUE}No words for {video_id}
+        print(f"""{color.BLUE}No words for {video_id}
 maybe, the video is too short to segment
-{print_hf_and_sbb_url(video_id)}"""
-        )
+{print_hf_and_sbb_url(video_id)}""")
 
         write_video_id_in_cache(video_id)
 
@@ -785,8 +754,7 @@ maybe, the video is too short to segment
             elif category_key == "interaction":
                 text_color = color.PURPLE
 
-            print(
-                f"""Video {video_id}
+            print(f"""Video {video_id}
 title {title}
 channel {channel_name}
 segment {index}
@@ -794,14 +762,11 @@ start {main_start_of_segment}
 end {main_end_of_segment}
 text {text}
 confidence {confidence} {text_color}
-category {category_key}{color.END}"""
-            )
+category {category_key}{color.END}""")
 
             if confidence < confidence_threshold:
-                print(
-                    f"""{color.RED}Confidence too low! Skipping segment
-confidence: {confidence} < {confidence_threshold}%{color.END}"""
-                )
+                print(f"""{color.RED}Confidence too low! Skipping segment
+confidence: {confidence} < {confidence_threshold}%{color.END}""")
                 continue
 
             change_time_limit = 0.1
@@ -814,24 +779,20 @@ confidence: {confidence} < {confidence_threshold}%{color.END}"""
             print(f"Segment duration: {segment_duration}")
             if main_start_of_segment < 5 and main_start_of_segment > -10:
                 main_start_of_segment = 0
-                print(
-                    f"""{color.CYAN}Video_id {video_id}
+                print(f"""{color.CYAN}Video_id {video_id}
 title {title}
 channel {channel_name}
 Start time too low! {main_start_of_segment} < 5
-Setting to 0{color.END}"""
-                )
+Setting to 0{color.END}""")
 
                 main_end_of_segment = main_end_of_segment + change_time_limit
 
             elif main_end_of_segment > duration - 30:
 
-                print(
-                    f"""{color.BLUE}Video_id {video_id}
+                print(f"""{color.BLUE}Video_id {video_id}
 title {title}
 channel {channel_name}
-End time too high! {main_end_of_segment} > {duration} - thirty seconds{color.END}"""
-                )
+End time too high! {main_end_of_segment} > {duration} - thirty seconds{color.END}""")
 
                 if main_end_of_segment > duration - 5:
 
@@ -841,31 +802,25 @@ End time too high! {main_end_of_segment} > {duration} - thirty seconds{color.END
                     ) and segment_duration < 20:
                         category_key = "outro"
 
-                        print(
-                            f"""{color.BLUE}Setting category to outro for
+                        print(f"""{color.BLUE}Setting category to outro for
 Video_id {video_id}
 title {title}
-channel {channel_name} {color.END}"""
-                        )
+channel {channel_name} {color.END}""")
 
                     main_end_of_segment = end_of_video(duration)
 
-                    print(
-                        f"""{color.GREEN}Setting end time to {main_end_of_segment}
+                    print(f"""{color.GREEN}Setting end time to {main_end_of_segment}
 Video_id {video_id}
 title {title}
-channel {channel_name}{color.END}"""
-                    )
+channel {channel_name}{color.END}""")
 
                 elif duration > 300:
 
-                    print(
-                        f"""Video_id {video_id} title {title} channel {channel_name}
+                    print(f"""Video_id {video_id} title {title} channel {channel_name}
 Segment {index}/{len(predictions)}: {category_key}
 Confidence {confidence}%
 Time span: {main_start_of_segment} - {main_end_of_segment}
-Text: {text}{color.END}"""
-                    )
+Text: {text}{color.END}""")
 
                     outro_start = main_end_of_segment - change_time_limit
                     outro_end = end_of_video(duration)
@@ -1044,8 +999,7 @@ def print_most_detail_of_a_video(
     """
 
     if max_workers_for_the_pp < max_max_workers_for_the_pp:
-        print(
-            f"""{color.GREEN}Making segment for video {video_id}
+        print(f"""{color.GREEN}Making segment for video {video_id}
 title: {title}
 date: {upload_date} day: {day} month: {month} year: {year}
 channel: {channel_name} ({uploader_url}) subscribed: {uploader_subscriber_count}
@@ -1053,8 +1007,7 @@ duration: {duration}
 views: {views}
 likes: {likes}
 sbb is at {sbb_url}
-hm at {url}{color.END}"""
-        )
+hm at {url}{color.END}""")
 
 
 if __name__ == "__main__":

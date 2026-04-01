@@ -6,12 +6,8 @@ so that the api can be used to create segments for the intro and the middle segm
 
 import os
 
-from f import (
-    WORKING_DIRECTORY,
-    process_responses,
-    random_choice,
-    user_ids_from_segment_type,
-)
+from f import (WORKING_DIRECTORY, process_responses, random_choice,
+               user_ids_from_segment_type)
 from reques import post_urls
 from sb_api import return_url_to_post
 from sync_already_run import sync_already_run
@@ -28,7 +24,6 @@ def make_middle_segment_from_id(
 
 
 def make_request_from_id(main_id, start, end, category, action_type="skip"):
-
     """this function makes a request to the api to create a middle segment"""
 
     sync_already_run(category)

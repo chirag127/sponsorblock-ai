@@ -1,10 +1,11 @@
-from yt_api import duration_from_video_id
-from silence import return_silence_segments
-from youtube_transcript_api_words import get_words
 import json
 import sys
 import webbrowser
 from urllib.parse import quote
+
+from silence import return_silence_segments
+from youtube_transcript_api_words import get_words
+from yt_api import duration_from_video_id
 
 TRANSCRIPT_TYPES = {
     "AUTO_MANUAL": {
@@ -74,8 +75,6 @@ def main(video_id, min_silence_duration=5, duration=None):
         webbrowser.open(link)
     except Exception as e:  # pylint: disable=broad-except
 
-
-
         print(e)
         print("Could not open link in browser")
         print(link)
@@ -87,6 +86,6 @@ if __name__ == "__main__":
         print("Usage: python3 find_silence.py <video_id>")
         main("MJkpbyonZZk", 1)
     elif len(sys.argv) == 2:
-        main(sys.argv[1],1)
+        main(sys.argv[1], 1)
     elif len(sys.argv) == 3:
         main(sys.argv[1], int(sys.argv[2]))

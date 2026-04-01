@@ -1,30 +1,19 @@
-from shared import (
-    CustomTokens,
-    DatasetArguments,
-    prepare_datasets,
-    load_datasets,
-    CustomTrainingArguments,
-    get_last_checkpoint,
-    train_from_checkpoint,
-)
-from model import ModelArguments, get_model_tokenizer
-import transformers
 import logging
 import os
 import sys
-from datasets import utils as d_utils
-from transformers import (
-    DataCollatorForSeq2Seq,
-    HfArgumentParser,
-    Seq2SeqTrainer,
-    Seq2SeqTrainingArguments,
-)
-
-
-from transformers.utils import check_min_version
-from transformers.utils.versions import require_version
 from dataclasses import dataclass
 
+import transformers
+from datasets import utils as d_utils
+from transformers import (DataCollatorForSeq2Seq, HfArgumentParser,
+                          Seq2SeqTrainer, Seq2SeqTrainingArguments)
+from transformers.utils import check_min_version
+from transformers.utils.versions import require_version
+
+from model import ModelArguments, get_model_tokenizer
+from shared import (CustomTokens, CustomTrainingArguments, DatasetArguments,
+                    get_last_checkpoint, load_datasets, prepare_datasets,
+                    train_from_checkpoint)
 
 # Will error if the minimal version of Transformers is not installed. Remove at your own risks.
 check_min_version("4.17.0")

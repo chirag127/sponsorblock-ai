@@ -2,19 +2,12 @@ import os
 import random
 import subprocess
 
-from f import (
-    WORKING_DIRECTORY,
-    append_to_file,
-    delete_all_files_in_directory,
-    return_already_run_videos,
-    write_to_file,
-)
+from f import (WORKING_DIRECTORY, append_to_file,
+               delete_all_files_in_directory, return_already_run_videos,
+               write_to_file)
 from gist_api import get_from_gist, write_to_gist
-from snippets_api import (
-    get_raw_snippet_content_by_id_or_title,
-    update_snippet_by_snippet_title,
-)
-
+from snippets_api import (get_raw_snippet_content_by_id_or_title,
+                          update_snippet_by_snippet_title)
 
 AR_GIST_ID = "1b61ccaa59c5523f445455e9281658a6"
 

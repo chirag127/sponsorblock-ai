@@ -1,4 +1,3 @@
-import re
 import traceback
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime

@@ -1,6 +1,6 @@
 import requests
 
-from f import return_segment, merge_segments
+from f import merge_segments, return_segment
 
 
 def get_skip_sponsor_api_response(video_id):

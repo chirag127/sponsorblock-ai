@@ -2,7 +2,6 @@
 This module contains the main function that is called when the program is run.
 """
 
-
 import os
 import random
 import subprocess
@@ -54,9 +53,7 @@ REPO_NAME = "Autosb"
 # check if the repo is already cloned
 if not os.path.isdir(REPO_NAME):
     # clone the repo
-    GIT_URL = (
-        "https://chirag127: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@github.com/chirag127/Autosb.git"
-    )
+    GIT_URL = "https://chirag127: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@github.com/chirag127/Autosb.git"
     git.Repo.clone_from(GIT_URL, REPO_NAME)
 
 # change the working directory to the repo

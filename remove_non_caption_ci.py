@@ -3,10 +3,12 @@ This script removes all the channel IDs from the ci.txt file
 whose videos don't have captions,
 if any one of the videos have captions then the channel ID is kept.
 """
+
 import os
-from f import WORKING_DIRECTORY
-from yt_api import video_ids_from_main_id, info_from_video_id
 import random
+
+from f import WORKING_DIRECTORY
+from yt_api import info_from_video_id, video_ids_from_main_id
 
 
 def get_all_channel_ids():

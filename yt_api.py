@@ -1,6 +1,5 @@
 """This module contains functions for getting youtube data."""
 
-
 import base64
 import contextlib
 import datetime
@@ -19,12 +18,12 @@ from f import (WORKING_DIRECTORY, append_to_file, color,
                difference_between_two_lists,
                print_status_and_text_from_response, random_choice,
                read_from_file, return_already_run_videos, return_de_duped_list,
-               write_to_file, write_video_id_in_cache)
+               write_to_file)
 from ftr import get_live_urls
 from reques import (get_url, get_url_with_retry, get_urls, get_urls_with_retry,
                     request_url)
 
-youtube = build('youtube', 'v3', developerKey="REDACTED_GOOGLE_KEY")
+youtube = build("youtube", "v3", developerKey="REDACTED_GOOGLE_KEY")
 
 
 def get_piped_api_instances() -> list:
@@ -366,9 +365,7 @@ def return_invidious_search_url(
     sort="relevance",
 ):  # pylint: disable=too-many-arguments
     """Returns a invidious search url."""
-    invidious_instance = random_choice(
-        invidious_instances
-    )
+    invidious_instance = random_choice(invidious_instances)
 
     return (
         f"{invidious_instance}/search?q={query}&page={page}&date={date}"
@@ -493,10 +490,7 @@ def video_ids_from_invidious_urls(video_ids, urls):
 def return_name_from_channel_id(channel_id):
     """Returns the name of the channel from the channel id."""
     try:
-        request = youtube.channels().list(
-            part="snippet",
-            id=channel_id
-        )
+        request = youtube.channels().list(part="snippet", id=channel_id)
         response = request.execute()
         return response["items"][0]["snippet"]["title"]
     except Exception as e:
@@ -508,8 +502,7 @@ def info_from_video_id(video_id, segment_type="auto", cache=False):
     """Returns the info of a video from its video id."""
     try:
         request = youtube.videos().list(
-            part="snippet,contentDetails,statistics",
-            id=video_id
+            part="snippet,contentDetails,statistics", id=video_id
         )
         response = request.execute()
         video_info = response["items"][0]["snippet"]
@@ -590,8 +583,7 @@ def get_channel_info(main_id):
     """Returns the channel info from the given video id."""
     try:
         request = youtube.channels().list(
-            part="snippet,contentDetails,statistics",
-            id=main_id
+            part="snippet,contentDetails,statistics", id=main_id
         )
         response = request.execute()
         return response["items"][0]

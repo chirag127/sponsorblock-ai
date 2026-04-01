@@ -1,23 +1,21 @@
-import itertools
-from errors import InferenceException, ModelLoadError
-from transformers import (
-    AutoModelForSeq2SeqLM,
-    AutoTokenizer,
-    AutoConfig,
-    AutoModelForSequenceClassification,
-    TrainingArguments,
-)
-from reques import post_url
-from shared import CustomTokens, GeneralArguments
-from dataclasses import dataclass, field
-from typing import Optional, Union
-import torch
-import classify
 import base64
-import re
-import requests
+import itertools
 import json
 import logging
+import re
+from dataclasses import dataclass, field
+from typing import Optional, Union
+
+import requests
+import torch
+from transformers import (AutoConfig, AutoModelForSeq2SeqLM,
+                          AutoModelForSequenceClassification, AutoTokenizer,
+                          TrainingArguments)
+
+import classify
+from errors import InferenceException, ModelLoadError
+from reques import post_url
+from shared import CustomTokens, GeneralArguments
 
 logging.basicConfig()
 logger = logging.getLogger(__name__)

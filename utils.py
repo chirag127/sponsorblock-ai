@@ -1,7 +1,7 @@
+import io
+import locale
 import re
 import sys
-import locale
-import io
 
 
 def re_findall(pattern, string):

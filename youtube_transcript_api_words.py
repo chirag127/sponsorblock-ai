@@ -1,16 +1,13 @@
 import json
 import os
 import re
-from functools import lru_cache
 import traceback
+from functools import lru_cache
 
 import requests
-from youtube_transcript_api import (
-    CouldNotRetrieveTranscript,
-    TooManyRequests,
-    YouTubeRequestFailed,
-    YouTubeTranscriptApi,
-)
+from youtube_transcript_api import (CouldNotRetrieveTranscript,
+                                    TooManyRequests, YouTubeRequestFailed,
+                                    YouTubeTranscriptApi)
 
 from f import wait_for_time_between_1_and_specified_time
 from free_proxy import FreeProxy

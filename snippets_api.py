@@ -1,8 +1,6 @@
+from f import (print_status_and_text_from_response,
+               wait_for_time_between_1_and_specified_time)
 from reques import get_url, post_url, request_url
-from f import (
-    print_status_and_text_from_response,
-    wait_for_time_between_1_and_specified_time,
-)
 
 GITLAB_TOKEN = "glpat-gb58VsQpQa3NaBCSAe_k"
 git_url = "https://gitlab.com/api/v4/snippets"

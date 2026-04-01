@@ -1,5 +1,6 @@
-import preprocess
 from dataclasses import dataclass, field
+
+import preprocess
 
 
 @dataclass

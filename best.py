@@ -1,4 +1,5 @@
 """This is the main function that is called when the program is run."""
+
 import os
 import random
 import sys
@@ -12,19 +13,10 @@ wl_main()
 
 from auto import all_auto_channel_ids_processing, process_video_ids
 from config import mto
-from f import (
-    WORKING_DIRECTORY,
-    execute,
-    install_requirements_for_recognition,
-    return_already_run_videos,
-    return_de_duped_list,
-    system_information,
-    write_to_file,
-)
-from yt_api import (
-    get_feed,
-    video_ids_from_main_id,
-)
+from f import (WORKING_DIRECTORY, execute,
+               install_requirements_for_recognition, return_already_run_videos,
+               return_de_duped_list, system_information, write_to_file)
+from yt_api import get_feed, video_ids_from_main_id
 
 LIMIT_OR_NOT = random.random() < 0.9
 

@@ -1,6 +1,7 @@
 """
 This file is used to disable warnings for users with warnings.
 """
+
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
@@ -12,7 +13,6 @@ print("start")
 
 
 def main(user_id):
-
     """
     Main function to be called for each user_id
     :param user_id:

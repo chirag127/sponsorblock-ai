@@ -4,14 +4,11 @@ contains the functions to
 2. return segment
 3. return_silence_segments
 """
+
 import traceback
-from f import (
-    end_of_video,
-    merge_segments,
-    random_choice,
-    return_segment,
-    user_ids_from_segment_type,
-)
+
+from f import (end_of_video, merge_segments, random_choice, return_segment,
+               user_ids_from_segment_type)
 
 filler_user_ids = user_ids_from_segment_type("filler")
 intro_user_ids = user_ids_from_segment_type("intro")
@@ -230,7 +227,6 @@ def make_silence_all_segments(
     is_recognized,
     decrease_silence_duration=False,
 ):  # sourcery skip: low-code-quality
-
     """returns the silence segments"""
     if user_id is None:
         user_id = random_choice(user_ids)
@@ -398,8 +394,7 @@ def make_silence_all_segments(
             or total_filler_duration / duration > 0.25
         ):
 
-            print(
-                f"""
+            print(f"""
 video_id: {video_id}
 is_recognized: {is_recognized}
 title: {title}
@@ -412,8 +407,7 @@ total_silence_duration: {total_silence_duration}
 duration: {duration}
 ignore: {ignore}
 intro_length: {intro_length}
-outro_length: {outro_length}"""
-            )
+outro_length: {outro_length}""")
 
             intro_and_outro_segments = []
             filler_segments = []
