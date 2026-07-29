@@ -1,3 +1,5 @@
+import os
+
 import openai
 
 with open("wiki_sbp.txt", "r") as file:
@@ -13,8 +15,7 @@ Category:"""
 
 
 if __name__ == "__main__":
-
-    openai.api_key = "REDACTED_OPENAI_KEY"
+    openai.api_key = os.environ.get("OPENAI_API_KEY")
     a = (
         "your favorite neighborhood got nick how you guys doing "
         + "today welcome to a brand "

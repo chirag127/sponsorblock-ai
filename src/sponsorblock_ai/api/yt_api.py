@@ -8,22 +8,33 @@ import os
 import random
 import re
 import traceback
-# import Iterable
-from typing import List
 
+# import Iterable
 from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
 
-from f import (WORKING_DIRECTORY, append_to_file, color,
-               difference_between_two_lists,
-               print_status_and_text_from_response, random_choice,
-               read_from_file, return_already_run_videos, return_de_duped_list,
-               write_to_file)
+from f import (
+    WORKING_DIRECTORY,
+    append_to_file,
+    color,
+    difference_between_two_lists,
+    print_status_and_text_from_response,
+    random_choice,
+    read_from_file,
+    return_already_run_videos,
+    return_de_duped_list,
+    write_to_file,
+)
 from ftr import get_live_urls
-from reques import (get_url, get_url_with_retry, get_urls, get_urls_with_retry,
-                    request_url)
+from reques import (
+    get_url,
+    get_url_with_retry,
+    get_urls,
+    get_urls_with_retry,
+    request_url,
+)
 
-youtube = build("youtube", "v3", developerKey="REDACTED_GOOGLE_KEY")
+youtube = build("youtube", "v3", developerKey=os.environ.get("YOUTUBE_API_KEY"))
 
 
 def get_piped_api_instances() -> list:
@@ -114,8 +125,8 @@ def not_already_run_video_ids_from_main_id_and_category(main_id, segment_categor
 
 
 def not_already_run_video_ids_from_video_ids_and_category(
-    video_ids: List[str], segment_type: str
-) -> List[str]:
+    video_ids: list[str], segment_type: str
+) -> list[str]:
     """Returns a list of video ids from the
     given list of video ids that have not already been run."""
 
@@ -127,7 +138,7 @@ def not_already_run_video_ids_from_video_ids_and_category(
 
 def return_video_ids_from_playlist_id_from_invidious(
     playlist_id: str,
-) -> List[str]:
+) -> list[str]:
     """Returns a list of video ids from a playlist id."""
     for instance in invidious_instances_api:
         urls = [
@@ -189,21 +200,9 @@ def get_videos_from_pl_or_c_id(channel_id, limit=False):
                 "contents"
             ]["twoColumnBrowseResultsRenderer"]["tabs"][0]["tabRenderer"]["content"][
                 "sectionListRenderer"
-            ][
-                "contents"
-            ][
-                0
-            ][
-                "itemSectionRenderer"
-            ][
-                "contents"
-            ][
-                0
-            ][
+            ]["contents"][0]["itemSectionRenderer"]["contents"][0][
                 "playlistVideoListRenderer"
-            ][
-                "contents"
-            ]
+            ]["contents"]
 
         else:
             params = {"key": INNERTUBE_KEY}

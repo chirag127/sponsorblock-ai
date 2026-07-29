@@ -40,3 +40,21 @@ Thumbs.db
 
 # Dependencies managed by uv (or pip)
 /site-packages
+
+# Big data files
+data/
+user_ids/
+old_user_ids/
+transcripts/auto/
+transcripts/manual/
+*.txt
+!requirements.txt
+!language_codes.txt
+raw/
+search_video_ids/
+video_ids/
+video_info/
+invidious_instances/
+
+# Secrets
+.env
